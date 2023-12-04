@@ -1,0 +1,115 @@
+* {
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+
+  background-color: #000;
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+}
+
+.calculator {
+
+  background-color: #254e53;
+  max-width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 35px;
+  border-radius: 15px;
+  user-select: none;
+
+}
+
+.calculate {
+
+  width: 100%;
+  margin: 3vh 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2, minmax(40px, auto));
+  word-wrap: break-word;
+  padding-bottom: 20px;
+  border-bottom: 1px rgb(255, 255, 255) solid;
+
+}
+
+.calculate .a {
+
+  text-align: right;
+  height: 8vh;
+  color: white;
+  font-size: xx-large;
+  line-height: 2;
+  word-wrap: break-word;
+
+}
+
+.calculate .zero {
+
+  text-align: right;
+  color: rgba(238, 235, 235, 0.997);
+  height: 7px;
+  line-height: 3;
+  font-size: larger;
+
+}
+
+.botao {
+
+  display: grid;
+  grid: repeat(5, 70px) / repeat(4, 70px);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+
+}
+
+.botao button {
+
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: #fcef38;
+  color: #000000;
+  font-size: x-large;
+
+}
+
+.botao .symbol {
+
+  color: #000;
+  background: #52ff75;
+  font-weight: bold;
+
+}
+
+.number:hover {
+
+  background-color: #25374a;
+
+}
+
+.symbol:hover {
+
+  background-color: #ffab00;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  body {
+
+      background-color: #b6b3b3;
+      align-items: flex-start;
+      
+  }
+}
